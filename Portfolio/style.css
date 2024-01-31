@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,300;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    width: 100%;
+    background-color: #2C3E4F;
+    padding-top: 2rem;
+    padding-left: 10rem;
+    padding-bottom: 2rem;
+    position:fixed;
+    z-index: +1;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav-title{
+    float: left;
+}
+
+.nav-title a{
+    color: #ffff;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+
+.nav-link{
+    padding-right: 10rem;
+    padding-top: 1.2rem;
+    float: right;
+}
+
+.nav-link ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav-link a{
+    color: #ffff;
+    padding: 1rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.4s ease;
+}
+
+.nav-link a:hover{
+    color:#1ABC9B
+}
+
+.header{
+    background-color: #1ABC9B;
+    width: 100%;
+    height: auto;
+    padding-top: 11rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.image{
+    max-width: 256px;
+    height: auto;
+}
+
+.header h1{
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.star-head, .star-main{
+    border: none;
+    border-top: 0.4rem solid #fff;
+    border-radius: 10px;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+}
+
+.star-head::after, .star-main::after{
+    content: "\2605";
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 900 ;
+    position: relative;
+    top: -28px;
+    background-color: #1ABC9B;
+    padding: 1rem;
+}
+
+.header h3{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.5rem;
+}
+
+.portfolio{
+    height: auto;
+    margin-top: 5rem;
+}
+
+.portfolio h1{
+    font-size: 5rem;
+    text-align: center;
+    color: #2D3D4F;
+}
+
+.star-main{
+    border-color: #2D3D4F;
+}
+
+.star-main::after{
+    color: #2D3D4F;
+    background-color: #fff;
+    margin: 11rem;
+}
