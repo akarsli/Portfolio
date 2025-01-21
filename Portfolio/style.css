@@ -310,18 +310,18 @@ p{
     #nav-link{
         padding-right: 0;
         padding-top: 0;
-        float: none;  /* float'ı kaldırıyoruz */
-        text-align: left;  /* solda hizalamayı sağlıyoruz */
-        padding-left: 2rem; /* Sol boşluk veriyoruz */
+        float: none;
+        text-align: left;
+        padding-left: 2rem;
     }
     
     #nav-link ul{
         list-style: none;
-        display: block; /* Flex yerine blok düzeni kullanıyoruz */
+        display: block;
     }
     
     #nav-link a{
-        display: block; /* Her bir bağlantıyı blok seviyesinde yapıyoruz */
+        display: block;
         color: #ffff;
         padding-top: 3rem;
         font-size: 1.6rem;
