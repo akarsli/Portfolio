@@ -13,11 +13,12 @@
             <div class="nav-title">
                 <a href="#start"><h2>Your Name</h2></a>
             </div>
-            <div class="nav-link">
+            <div id="nav-link" class="responsive">
                 <ul>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="nav-icon"><a href="#"><i class='bx bx-menu'></i></a></li>
+                    <li><a href="#" class="nav-links">Portfolio</a></li>
+                    <li><a href="#about" class="nav-links">About</a></li>
+                    <li><a href="#contact" class="nav-links">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -35,5 +36,71 @@
             <h1>Portfolio</h1>
             <hr class="star-main">
         </div>
+        <div class="portfolio-items">
+            <img class="portfolio-item" src="images/cabin.png" alt="cabin">
+            <img class="portfolio-item" src="images/cake.png" alt="cake">
+            <img class="portfolio-item" src="images/circus.png" alt="circus">
+            <img class="portfolio-item" src="images/game.png" alt="game">
+            <img class="portfolio-item" src="images/safe.png" alt="safe">
+            <img class="portfolio-item" src="images/submarine.png" alt="submarine">
+        </div>
+        <div class="about" id="about">
+            <h1>About</h1>
+            <hr class="star-head">
+            <div class="paragraf">
+                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+                <br>
+                <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+            </div>
+            <div class="about-btn">
+                <button><i class='bx bxs-download'></i>Download Now!</button>
+            </div>
+        </div>
+        <div class="contact-me" id="contact">
+            <h3>Contact Me</h3>
+            <hr class="star-main">
+            <div class="inputs">
+                <input placeholder="Name">
+                <br>
+                <input type="email" placeholder="Email">
+                <br>
+                <input type="number" placeholder="Phone">
+                <br>
+                <input placeholder="Message">
+                <br>
+            </div>
+            <button class="cm-send">Send</button>
+        </div>
+        <div class="outro">
+            <div class="Location">
+                <h1>Location</h1>
+                <p>2215 John Daniel Drive Clark, MO 65243</p>
+            </div>
+            <div class="around-the-web">
+                <h1>Around The Web</h1>
+                <button><i class='bx bxl-facebook' ></i></button>
+                <button><i class='bx bxl-twitter' ></i></button>
+                <button><i class='bx bxl-linkedin' ></i></button>
+                <button><i class='bx bxl-dribbble'></i></button>
+            </div>
+            <div class="about-freelancer">
+                <h1>About Freelancer</h1>
+                <p>Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap .</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Your Website 2025</p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            $(".nav-icon").click(function(){
+                $("#nav-link").toggleClass("responsive");
+                return false;
+    
+            });
+        </script>
+
     </body>
 </html>
